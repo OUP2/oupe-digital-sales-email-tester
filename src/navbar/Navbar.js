@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import oupLogo from "../assets/OUP-logo.png";
 
 export const Navbar = () => {
   const [isActive, setActive] = useState(false);
@@ -19,9 +20,16 @@ export const Navbar = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
+        <div class="navbar-item">
+          <img src={oupLogo} alt="" />
+        </div>
         <a
           role="button"
-          className={isActive ? "navbar-burger has-background-dark is-active" : "navbar-burger has-background-dark"}
+          className={
+            isActive
+              ? "navbar-burger has-background-dark is-active"
+              : "navbar-burger has-background-dark"
+          }
           aria-label="menu"
           aria-expanded="false"
           data-target="basicNavbar"
@@ -34,17 +42,16 @@ export const Navbar = () => {
       </div>
       <div
         id="basicNavbar"
-        className={isActive ? "navbar-menu has-background-dark is-active" : "navbar-menu has-background-dark"}
+        className={
+          isActive
+            ? "navbar-menu has-background-dark is-active"
+            : "navbar-menu has-background-dark"
+        }
       >
         <div className="navbar-start">
           <div className="navbar-item">
             <Link to={"/"} className="has-text-white">
               {t("navbar.homepageItem")}
-            </Link>
-          </div>
-          <div className="navbar-item">
-            <Link to={"/settings"} className="has-text-white">
-              {t("navbar.settingsItem")}
             </Link>
           </div>
           <div className="navbar-item">
@@ -60,7 +67,9 @@ export const Navbar = () => {
         </div>
         <div className="navbar-end has-background-dark">
           <div className="navbar-item has-dropdown is-hoverable ">
-            <a class="navbar-link has-text-white">{t("navbar.languagesItem")}</a>
+            <a class="navbar-link has-text-white">
+              {t("navbar.languagesItem")}
+            </a>
             <div className="navbar-dropdown has-background-dark">
               <a
                 className="navbar-item has-text-white"
@@ -77,15 +86,6 @@ export const Navbar = () => {
                 }}
               >
                 English
-              </a>
-              <a
-                className="navbar-item has-text-white"
-                onClick={() => {
-                  console.log(i18n.language);
-                  return i18n.changeLanguage("fr");
-                }}
-              >
-                Français
               </a>
             </div>
           </div>

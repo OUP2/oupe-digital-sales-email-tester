@@ -2,7 +2,6 @@ import "bulma/css/bulma.min.css";
 import { Navbar } from "./navbar/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import SettingsPage from "./pages/SettingsPage";
 import DocumentationPage from "./pages/DocumentationPage";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -24,7 +23,6 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path={"/"} element={<HomePage />} exact />
-          <Route path={"/settings"} element={<SettingsPage />} exact />
           <Route path={"/docs"} element={<DocumentationPage />} exact />
           <Route path={"/about"} element={<AboutPage />} exact />
           <Route path="*" element={<NotFoundPage />} />
