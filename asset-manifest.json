@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-app-template-bulma-gh-pages/static/css/main.7eff6252.css",
-    "main.js": "/react-app-template-bulma-gh-pages/static/js/main.92bb21ff.js",
-    "static/js/787.3ad3a0b1.chunk.js": "/react-app-template-bulma-gh-pages/static/js/787.3ad3a0b1.chunk.js",
-    "static/media/Mail-Icon-White-on-Black.png": "/react-app-template-bulma-gh-pages/static/media/Mail-Icon-White-on-Black.5b186bf61afd84851d94.png",
-    "static/media/OUP-logo.png": "/react-app-template-bulma-gh-pages/static/media/OUP-logo.ddcbe3f7c1017ebee587.png",
-    "index.html": "/react-app-template-bulma-gh-pages/index.html",
-    "static/media/getFetch.cjs": "/react-app-template-bulma-gh-pages/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.7eff6252.css.map": "/react-app-template-bulma-gh-pages/static/css/main.7eff6252.css.map",
-    "main.92bb21ff.js.map": "/react-app-template-bulma-gh-pages/static/js/main.92bb21ff.js.map",
-    "787.3ad3a0b1.chunk.js.map": "/react-app-template-bulma-gh-pages/static/js/787.3ad3a0b1.chunk.js.map"
+    "main.css": "/oupe-digital-sales-email-tester/static/css/main.7eff6252.css",
+    "main.js": "/oupe-digital-sales-email-tester/static/js/main.0fb6d424.js",
+    "static/js/787.3ad3a0b1.chunk.js": "/oupe-digital-sales-email-tester/static/js/787.3ad3a0b1.chunk.js",
+    "static/media/Mail-Icon-White-on-Black.png": "/oupe-digital-sales-email-tester/static/media/Mail-Icon-White-on-Black.5b186bf61afd84851d94.png",
+    "static/media/OUP-logo.png": "/oupe-digital-sales-email-tester/static/media/OUP-logo.ddcbe3f7c1017ebee587.png",
+    "index.html": "/oupe-digital-sales-email-tester/index.html",
+    "static/media/getFetch.cjs": "/oupe-digital-sales-email-tester/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.7eff6252.css.map": "/oupe-digital-sales-email-tester/static/css/main.7eff6252.css.map",
+    "main.0fb6d424.js.map": "/oupe-digital-sales-email-tester/static/js/main.0fb6d424.js.map",
+    "787.3ad3a0b1.chunk.js.map": "/oupe-digital-sales-email-tester/static/js/787.3ad3a0b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7eff6252.css",
-    "static/js/main.92bb21ff.js"
+    "static/js/main.0fb6d424.js"
   ]
 }
