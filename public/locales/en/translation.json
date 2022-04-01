@@ -1,0 +1,30 @@
+{
+  "homepage": {
+    "title": "❤️ Template",
+    "subtitle": "Lorem ipsum.",
+    "clickMeBtn": "Click Me!",
+    "testClickCounterText_zero": "The button hasn't been clicked yet.",
+    "testClickCounterText_one": "The button has been clicked once.",
+    "testClickCounterText_other": "The button was clicked {{count}} times."
+  },
+  "navbar": {
+    "homepageItem": "Home",
+    "settingsItem": "Settings",
+    "docsItem": "Documentation",
+    "aboutItem": "About",
+    "languagesItem": "Languages"
+  },
+  "settingsPage": {
+    "title": "Settings"
+  },
+  "documentationPage": {
+    "title": "Documentation"
+  },
+  "aboutPage": {
+    "title": "About"
+  },
+  "notFoundPage": {
+    "title": "Oops!",
+    "subtitle": "404 Not Found"
+  }
+}
