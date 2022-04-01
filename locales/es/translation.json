@@ -1,6 +1,6 @@
 {
   "homepage": {
-    "title": "❤️ Plantilla",
+    "title": "Venta digital - Notificación por correo",
     "subtitle": "Lorem ipsum.",
     "clickMeBtn": "¡Haz clic aquí!",
     "testClickCounterText_zero": "Aún no has hecho clic en el botón.",
@@ -9,13 +9,9 @@
   },
   "navbar": {
     "homepageItem": "Inicio",
-    "settingsItem": "Ajustes",
     "docsItem": "Documentación",
     "aboutItem": "Acerca de",
     "languagesItem": "Idioma"
-  },
-  "settingsPage": {
-    "title": "Ajustes"
   },
   "documentationPage": {
     "title": "Documentación"
