@@ -1,0 +1,26 @@
+{
+  "homepage": {
+    "title": "Venta digital - Notificación por correo",
+    "subtitle": "Lorem ipsum.",
+    "clickMeBtn": "¡Haz clic aquí!",
+    "testClickCounterText_zero": "Aún no has hecho clic en el botón.",
+    "testClickCounterText_one": "Has hecho clic una vez.",
+    "testClickCounterText_other": "Has hecho clic {{count}} veces."
+  },
+  "navbar": {
+    "homepageItem": "Inicio",
+    "docsItem": "Documentación",
+    "aboutItem": "Acerca de",
+    "languagesItem": "Idioma"
+  },
+  "documentationPage": {
+    "title": "Documentación"
+  },
+  "aboutPage": {
+    "title": "Acerca de"
+  },
+  "notFoundPage": {
+    "title": "¡Ups!",
+    "subtitle": "404 No encontrado"
+  }
+}
