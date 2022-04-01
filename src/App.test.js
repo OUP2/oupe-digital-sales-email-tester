@@ -31,13 +31,10 @@ describe("App Tests", () => {
     Navbar.mockImplementation(() => <div>NavbarMock</div>);
     NotFoundPage.mockImplementation(() => <div>NotFoundPageMock</div>);
 
-    // eslint-disable-next-line testing-library/no-unnecessary-act
     render(<App />);
 
     expect(screen.getByText("NavbarMock")).toBeInTheDocument();
     expect(screen.getByText("HomePageMock")).toBeInTheDocument();
     expect(screen.queryByText("NotFoundPageMock")).not.toBeInTheDocument();
   });
-
-  // TODO: add test for empty and wrong categories when they are implemented through the backend
 });

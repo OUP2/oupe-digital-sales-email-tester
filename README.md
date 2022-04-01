@@ -61,7 +61,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 To deploy the project automatically to GitHub Pages, create a property in package.json called `homepage` and run the command. The format should be the following: `https://{username}.github.io/{repo-name}`
 
 For instance:
-`"homepage": "https://carlosbermejop.github.io/react-app-template-bulma-gh-pages,"`
+`"homepage": "https://carlosbermejop.github.io/react-app-template-bulma-gh-pages",`
 
 ## Localization with l18n-react
 Localization is implemented through [react-i18next](https://react.i18next.com/). All localized strings should be kept at `/public/locales/{{language_name}}/translation.json`. 

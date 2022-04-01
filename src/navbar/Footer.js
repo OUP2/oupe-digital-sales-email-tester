@@ -1,6 +1,5 @@
 import gitHubLogo from "../assets/GitHub-Mark-Light-32px.png";
 import mailLogo from "../assets/Mail-Icon-White-on-Black.png";
-import twitterLogo from "../assets/2021-Twitter-logo-white.png";
 import linkedInLogo from "../assets/linkedin-icon-white.png";
 
 export const Footer = () => (
@@ -8,7 +7,7 @@ export const Footer = () => (
     <div className="navbar-brand">
       <a
         class="navbar-item"
-        href="https://github.com/carlosbermejop"
+        href="https://github.com/carlosbermejo-oup"
         target="_blank"
         rel="noreferrer noopener"
       >
@@ -16,16 +15,8 @@ export const Footer = () => (
           src={gitHubLogo}
           width="32"
           height="32"
-          alt="https://github.com/carlosbermejop"
+          alt="https://github.com/carlosbermejo-oup"
         />
-      </a>
-      <a
-        className="navbar-item"
-        href="https://twitter.com/Carlos_BWE"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <img src={twitterLogo} width="32" alt="@Carlos_BWE" />
       </a>
       <a
         className="navbar-item"
@@ -41,7 +32,7 @@ export const Footer = () => (
       </a>
       <a
         className="navbar-item"
-        href="mailto:carlosbermejop@gmail.com"
+        href="mailto:carlos.bermejo@oup.com"
         target="_blank"
         rel="noreferrer noopener"
       >
@@ -49,7 +40,7 @@ export const Footer = () => (
           src={mailLogo}
           width="34"
           height="37"
-          alt="mailto:carlosbermejop@gmail.com"
+          alt="carlos.bermejo@oup.com"
         />
       </a>
       <a className="navbar-item" href="https://bulma.io">
