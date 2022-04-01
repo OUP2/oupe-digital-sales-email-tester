@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7eff6252.css",
+    "main.js": "/static/js/main.16d17316.js",
+    "static/js/787.3ad3a0b1.chunk.js": "/static/js/787.3ad3a0b1.chunk.js",
+    "static/media/Mail-Icon-White-on-Black.png": "/static/media/Mail-Icon-White-on-Black.5b186bf61afd84851d94.png",
+    "static/media/2021-Twitter-logo-white.png": "/static/media/2021-Twitter-logo-white.27cda7bdfce3369a30e8.png",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.7eff6252.css.map": "/static/css/main.7eff6252.css.map",
+    "main.16d17316.js.map": "/static/js/main.16d17316.js.map",
+    "787.3ad3a0b1.chunk.js.map": "/static/js/787.3ad3a0b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eff6252.css",
+    "static/js/main.16d17316.js"
+  ]
+}
