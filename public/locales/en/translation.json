@@ -2,7 +2,7 @@
   "homepage": {
     "title": "Digital Sales - Email notification",
     "subtitle": "Lorem ipsum.",
-    "clickMeBtn": "Click Me!",
+    "displayModalBtn": "Display Email",
     "testClickCounterText_zero": "The button hasn't been clicked yet.",
     "testClickCounterText_one": "The button has been clicked once.",
     "testClickCounterText_other": "The button was clicked {{count}} times."

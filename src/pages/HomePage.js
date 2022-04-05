@@ -1,9 +1,35 @@
-import { useState, Suspense } from "react";
+import { useEffect, Suspense } from "react";
 import { useTranslation } from "react-i18next";
+import { constants } from "../utils/constants";
+import axios from "axios";
 
 const HomePage = () => {
-  const [currentClickedTimes, setCurrentClickedTimes] = useState(0);
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.addEventListener("keydown", (event) => {
+      const e = event || window.event;
+
+      if (e.keyCode === 27) {
+        closeModal(document.querySelector(".modal"));
+      }
+    });
+
+    retrieveTest();
+  }, []);
+
+  const retrieveTest = async () => {
+    const result = await axios.get(`${constants.BACKEND_URL}/`);
+    console.log(result.data);
+  };
+
+  const openModal = (modal) => {
+    modal.classList.add("is-active");
+  };
+
+  const closeModal = (modal) => {
+    modal.classList.remove("is-active");
+  };
 
   return (
     <section className="section">
@@ -12,13 +38,26 @@ const HomePage = () => {
         <p className="block">{t("homepage.subtitle")}</p>
         <button
           className="button is-primary block"
-          onClick={() => setCurrentClickedTimes(currentClickedTimes + 1)}
+          onClick={() => openModal(document.querySelector(".modal"))}
         >
-          {t("homepage.clickMeBtn")}
+          {t("homepage.displayModalBtn")}
         </button>
-        <p>
-          {t("homepage.testClickCounterText", { count: currentClickedTimes })}
-        </p>
+        <div className="modal">
+          <div
+            className="modal-background"
+            onClick={() => closeModal(document.querySelector(".modal"))}
+          ></div>
+          <div className="modal-content">
+            <div className="box">
+              <div>Tabula rasa</div>
+            </div>
+          </div>
+          <button
+            className="modal-close is-large"
+            aria-label="close"
+            onClick={() => closeModal(document.querySelector(".modal"))}
+          ></button>
+        </div>
       </div>
     </section>
   );

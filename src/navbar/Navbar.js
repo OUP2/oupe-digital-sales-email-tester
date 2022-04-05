@@ -20,7 +20,7 @@ export const Navbar = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <div class="navbar-item">
+        <div className="navbar-item">
           <img src={oupLogo} alt="" />
         </div>
         <a
@@ -67,7 +67,7 @@ export const Navbar = () => {
         </div>
         <div className="navbar-end has-background-dark">
           <div className="navbar-item has-dropdown is-hoverable ">
-            <a class="navbar-link has-text-white">
+            <a className="navbar-link has-text-white">
               {t("navbar.languagesItem")}
             </a>
             <div className="navbar-dropdown has-background-dark">
