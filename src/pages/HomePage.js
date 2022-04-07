@@ -13,7 +13,7 @@ const HomePage = () => {
   const [emailSettings, setEmailSettings] = useState(null);
   const [platformTypeInfo, setPlatformTypeInfo] = useState([]);
   const [emailTemplateResult, setEmailTemplateResult] = useState("");
-  const [formIsIncomplete, setFormIsIncomplete] = useState(false);
+  const [formIsIncomplete, setFormIsIncomplete] = useState(true);
 
   const { t } = useTranslation();
 
