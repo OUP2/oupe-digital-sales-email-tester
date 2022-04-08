@@ -42,17 +42,6 @@
     "title": "¡Ups!",
     "subtitle": "404 No encontrado"
   },
-  "testCases": {
-    "invoiceNoLicenses": {
-      "id": "invoiceNoLicenses",
-      "name": "Correo con recibo y sin licencias",
-      "receivesInvoice": true,
-      "receivesLicenses": false,
-      "platformType": null,
-      "isReturn": false,
-      "descriptionText": "El cliente recibirá el recibo, pero no las licencias."
-    }
-  },
   "testCasesModal": {
     "descriptionTitle": "Description",
     "settingsTitle": "Settings"
@@ -89,6 +78,76 @@
     "ORC": {
       "id": "ORC",
       "name": "    ORC"
+    }
+  },
+  "testCases": {
+    "invoiceNoLicenses": {
+      "id": "invoiceNoLicenses",
+      "name": "Correo con recibo y sin licencias",
+      "receivesInvoice": true,
+      "receivesLicenses": false,
+      "platformType": null,
+      "isReturn": false,
+      "descriptionText": "El cliente recibirá el recibo, pero no las licencias."
+    },
+    "noInvoiceWithLicenseSinglePlatform": {
+      "id": "noInvoiceWithLicenseSinglePlatform",
+      "name": "Correo sin recibo y con licencias (una platforma)",
+      "receivesInvoice": false,
+      "receivesLicenses": true,
+      "platformType": ["marsupial"],
+      "isReturn": false,
+      "descriptionText": "El cliente no recibirá el recibo, pero recibirá las licencias de una sola plataforma (Marsupial)."
+    },
+    "noInvoiceWithLicenseMultiplePlatforms": {
+      "id": "noInvoiceWithLicenseMultiplePlatforms",
+      "name": "Correo sin recibo y con licencias (varias platformas)",
+      "receivesInvoice": false,
+      "receivesLicenses": true,
+      "platformType": [
+        "blinkUses",
+        "marsupial",
+        "OLB",
+        "onlinePractice",
+        "OOSP",
+        "ORC"
+      ],
+      "isReturn": false,
+      "descriptionText": "El cliente no recibirá el recibo, pero recibirá las licencias de varias plataformas (Blink - Usos, Marsupial, OLB, Online Practice, OOSP y ORC)."
+    },
+    "invoiceWithLicenseSinglePlatform": {
+      "id": "invoiceWithLicenseSinglePlatform",
+      "name": "Correo con recibo y licencias (una platforma)",
+      "receivesInvoice": true,
+      "receivesLicenses": true,
+      "platformType": ["blinkIndividual"],
+      "isReturn": false,
+      "descriptionText": "El cliente recibirá el recibo y las licencias de una sola plataforma (Blink - Individual)."
+    },
+    "invoiceWithLicenseMultiplePlatforms": {
+      "id": "invoiceWithLicenseMultiplePlatforms",
+      "name": "Correo con recibo y licencias (varias platformas)",
+      "receivesInvoice": true,
+      "receivesLicenses": true,
+      "platformType": [
+        "blinkUses",
+        "marsupial",
+        "OLB",
+        "onlinePractice",
+        "OOSP",
+        "ORC"
+      ],
+      "isReturn": false,
+      "descriptionText": "El cliente recibirá el recibo y las licencias de varias plataformas (Blink - Academies, Marsupial, OLB, Online Practice, OOSP y ORC)."
+    },
+    "returnOrder": {
+      "id": "returnOrder",
+      "name": "Correo para un pedido de devolución",
+      "receivesInvoice": false,
+      "receivesLicenses": false,
+      "platformType": null,
+      "isReturn": true,
+      "descriptionText": "Plantilla de correo que recibe un cliente al solicitar una devolución."
     }
   }
 }
