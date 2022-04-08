@@ -1,30 +1,11 @@
 {
   "homepage": {
     "title": "Digital Sales - Email notification",
-    "settings": "Settings",
-    "displayModalBtn": "Display Email",
-    "form": {
-      "receiveInvoiceQuestion": "Should the email contain an invoice?",
-      "receiveLicensesQuestion": "Should the email contain the licences?",
-      "platforms": "Platforms",
-      "isReturnQuestion": "Is is a return?",
-      "yes": "    Yes",
-      "no": "    No",
-      "submitBtn": "Submit",
-      "resetBtn": "Reset"
-    },
-    "testCasesTitle": "Test Cases",
-    "casesTabTitle": "Tests",
-    "testCasesModal": {
-      "descriptionTitle": "Description",
-      "settingsTitle": "Settings",
-      "useSettingsBtn": "Use These Settings",
-      "cancelBtn": "Cancel",
-      "invoiceLabel": "Invoice",
-      "licensesLabel": "Licenses",
-      "platformTypeLabel": "Platform Type",
-      "isReturnLabel": "Return"
-    }
+    "subtitle": "Lorem ipsum.",
+    "clickMeBtn": "Click Me!",
+    "testClickCounterText_zero": "The button hasn't been clicked yet.",
+    "testClickCounterText_one": "The button has been clicked once.",
+    "testClickCounterText_other": "The button was clicked {{count}} times."
   },
   "navbar": {
     "homepageItem": "Home",
@@ -41,54 +22,5 @@
   "notFoundPage": {
     "title": "Oops!",
     "subtitle": "404 Not Found"
-  },
-  "testCases": {
-    "invoiceNoLicenses": {
-      "id": "invoiceNoLicenses",
-      "name": "Email with invoice and no licenses",
-      "receivesInvoice": true,
-      "receivesLicenses": false,
-      "platformType": null,
-      "isReturn": false,
-      "descriptionText": "The client will receive the invoice, but not the licenses."
-    }
-  },
-  "testCasesModal": {
-    "descriptionTitle": "Description",
-    "settingsTitle": "Settings"
-  },
-  "platformTypes": {
-    "blinkUses": {
-      "id": "blinkUses",
-      "name": "    Blink - Uses"
-    },
-    "blinkIndividual": {
-      "id": "blinkIndividual",
-      "name": "    Blink - Individual"
-    },
-    "blinkAcademy": {
-      "id": "blinkAcademy",
-      "name": "    Blink - Academies"
-    },
-    "marsupial": {
-      "id": "marsupial",
-      "name": "    Marsupial"
-    },
-    "OLB": {
-      "id": "OLB",
-      "name": "    OLB"
-    },
-    "onlinePractice": {
-      "id": "onlinePractice",
-      "name": "    Online Practice"
-    },
-    "OOSP": {
-      "id": "OOSP",
-      "name": "    OOSP"
-    },
-    "ORC": {
-      "id": "ORC",
-      "name": "    ORC"
-    }
   }
 }
