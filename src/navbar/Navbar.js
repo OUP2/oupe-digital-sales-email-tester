@@ -54,16 +54,6 @@ export const Navbar = () => {
               {t("navbar.homepageItem")}
             </Link>
           </div>
-          <div className="navbar-item">
-            <Link to={"/docs"} className="has-text-white">
-              {t("navbar.docsItem")}
-            </Link>
-          </div>
-          <div className="navbar-item">
-            <Link to={"/about"} className="has-text-white">
-              {t("navbar.aboutItem")}
-            </Link>
-          </div>
         </div>
         <div className="navbar-end has-background-dark">
           <div className="navbar-item has-dropdown is-hoverable ">

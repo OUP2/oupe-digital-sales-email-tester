@@ -42,17 +42,6 @@
     "title": "Oops!",
     "subtitle": "404 Not Found"
   },
-  "testCases": {
-    "invoiceNoLicenses": {
-      "id": "invoiceNoLicenses",
-      "name": "Email with invoice and no licenses",
-      "receivesInvoice": true,
-      "receivesLicenses": false,
-      "platformType": null,
-      "isReturn": false,
-      "descriptionText": "The client will receive the invoice, but not the licenses."
-    }
-  },
   "testCasesModal": {
     "descriptionTitle": "Description",
     "settingsTitle": "Settings"
@@ -89,6 +78,76 @@
     "ORC": {
       "id": "ORC",
       "name": "    ORC"
+    }
+  },
+  "testCases": {
+    "invoiceNoLicenses": {
+      "id": "invoiceNoLicenses",
+      "name": "Email with invoice and no licenses",
+      "receivesInvoice": true,
+      "receivesLicenses": false,
+      "platformType": null,
+      "isReturn": false,
+      "descriptionText": "The client will receive the invoice, but not the licenses."
+    },
+    "noInvoiceWithLicenseSinglePlatform": {
+      "id": "noInvoiceWithLicenseSinglePlatform",
+      "name": "Email without invoice and with licenses (single platform)",
+      "receivesInvoice": false,
+      "receivesLicenses": true,
+      "platformType": ["marsupial"],
+      "isReturn": false,
+      "descriptionText": "The client will not receive the invoice, but will receive licenses for a single platform (Marsupial)."
+    },
+    "noInvoiceWithLicenseMultiplePlatforms": {
+      "id": "noInvoiceWithLicenseMultiplePlatforms",
+      "name": "Email without invoice and with licenses (multiple platforms)",
+      "receivesInvoice": false,
+      "receivesLicenses": true,
+      "platformType": [
+        "blinkUses",
+        "marsupial",
+        "OLB",
+        "onlinePractice",
+        "OOSP",
+        "ORC"
+      ],
+      "isReturn": false,
+      "descriptionText": "The client will not receive the invoice, but will receive licenses for multiple platforms (Blink - Uses, Marsupial, OLB, Online Practice, OOSP and ORC)."
+    },
+    "invoiceWithLicenseSinglePlatform": {
+      "id": "invoiceWithLicenseSinglePlatform",
+      "name": "Email with an invoice and licenses (single platform)",
+      "receivesInvoice": true,
+      "receivesLicenses": true,
+      "platformType": ["blinkIndividual"],
+      "isReturn": false,
+      "descriptionText": "The client will receive the invoice and licenses for a single platform (Blink - Individual)."
+    },
+    "invoiceWithLicenseMultiplePlatforms": {
+      "id": "invoiceWithLicenseMultiplePlatforms",
+      "name": "Email with an invoice and licenses (multiple platforms)",
+      "receivesInvoice": true,
+      "receivesLicenses": true,
+      "platformType": [
+        "blinkUses",
+        "marsupial",
+        "OLB",
+        "onlinePractice",
+        "OOSP",
+        "ORC"
+      ],
+      "isReturn": false,
+      "descriptionText": "The client will receive the invoice and licenses for multiple platforms (Blink - Academies, Marsupial, OLB, Online Practice, OOSP and ORC)."
+    },
+    "returnOrder": {
+      "id": "returnOrder",
+      "name": "Email for a return order",
+      "receivesInvoice": false,
+      "receivesLicenses": false,
+      "platformType": null,
+      "isReturn": true,
+      "descriptionText": "This is the template email for return orders."
     }
   }
 }
