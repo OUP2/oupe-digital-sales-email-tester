@@ -6,7 +6,7 @@ export const Footer = () => (
   <nav className="navbar is-dark is-fixed-bottom">
     <div className="navbar-brand">
       <a
-        class="navbar-item"
+        className="navbar-item"
         href="https://github.com/carlosbermejo-oup"
         target="_blank"
         rel="noreferrer noopener"
